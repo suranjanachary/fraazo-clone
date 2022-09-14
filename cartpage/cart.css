@@ -1,0 +1,102 @@
+#cart_page{
+    /* border: 2px solid red; */
+    height: auto;
+    width: auto;
+
+    margin: 10px;
+    display: flex;
+   
+    justify-content: space-between;
+    position: static;
+}
+#cart_page>div{
+    /* border: 2px solid red; */
+    margin: 10px;
+    
+}
+#transparent{
+    display: grid;
+    backface-visibility: hidden;
+    grid-template-columns: repeat(3,1fr);
+}
+#transparent > div {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#cart_list{
+    /* border: 2px solid rgb(18, 212, 60); */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 1em;
+}
+ #cart_head{
+    /* border: 2px solid rgb(167, 36, 36); */
+    background-color: white;
+    font-size: 20px;
+    position: sticky;
+    top:85px;
+    left:820px;
+ } 
+
+ #cart_head > * {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+ }
+
+#cart_buttom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    
+    /* position: fixed;
+    width: 40%;
+    bottom:0px; */
+}
+
+
+
+@media all and (min-width: 50px) and (max-width: 650px) {
+
+    /* #cart_page{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width: 100%;
+    } */
+    #transparent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #transparent img {
+        width: 100%;
+    }
+    #cart_list{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin: auto;
+    }
+    #cart_buttom{
+        width: 100%;
+        margin: auto;
+    }
+    #cart_head > * {
+        padding: 0;
+    }
+    #cart_head{
+        /* border: 2px solid rgb(167, 36, 36); */
+        background-color: white;
+        font-size: 20px;
+        position: sticky;
+        top: 1em;
+        /* right: 2px; */
+     } 
+}
+
